@@ -54,7 +54,7 @@ export default function Home() {
               clipRule="evenodd" 
             />
           </svg>
-          <input type='text' className='' />
+          <input type='text' className='focus:outline-none bg-red-500' />
 
         </div>
       </form>
