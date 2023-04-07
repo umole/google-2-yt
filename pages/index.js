@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Avatar from '../components/Avatar'
+import { ViewGridIcon } from '@heroicons/react/solid'
 
 export default function Home() {
   return (
@@ -23,6 +24,7 @@ export default function Home() {
           <p className='link'>Images</p>
 
           {/* Icon */}
+          <ViewGridIcon className='h-6 w-6' />
 
           {/* Avatar */}
           <Avatar url={'https://images.pexels.com/photos/5792641/pexels-photo-5792641.jpeg?auto=compress&cs=tinysrgb&w=600'} />
