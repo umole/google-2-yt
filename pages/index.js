@@ -35,13 +35,13 @@ export default function Home() {
       </header>
 
       {/* Body */}
-      <form>
+      <form className='flex flex-col items-center mt-18'>
         <Image 
           src={'https://cdn.pixabay.com/photo/2015/10/31/12/54/google-1015751__340.png'} 
           height={100}
           width={300}
         />
-        <div>
+        <div className='flex w-full mt-5 hover:shadow-lg focus-within:shadow-lg max-w-md rounded-full px-5 py-2.5 border border-gray-200 items-center sm:max-w-xl lg:max-w-2xl'>
           <svg 
             xmlns="http://www.w3.org/2000/svg" 
             viewBox="0 0 24 24" 
@@ -54,7 +54,21 @@ export default function Home() {
               clipRule="evenodd" 
             />
           </svg>
-          <input type='text' className='focus:outline-none bg-red-500' />
+          <input type='text' className=' flex-grow focus:outline-none' />
+
+          <svg 
+            xmlns="http://www.w3.org/2000/svg" 
+            viewBox="0 0 24 24" 
+            fill="currentColor" 
+            class="w-6 h-6"
+          >
+            <path 
+              d="M8.25 4.5a3.75 3.75 0 117.5 0v8.25a3.75 3.75 0 11-7.5 0V4.5z"    
+            />
+            <path 
+              d="M6 10.5a.75.75 0 01.75.75v1.5a5.25 5.25 0 1010.5 0v-1.5a.75.75 0 011.5 0v1.5a6.751 6.751 0 01-6 6.709v2.291h3a.75.75 0 010 1.5h-7.5a.75.75 0 010-1.5h3v-2.291a6.751 6.751 0 01-6-6.709v-1.5A.75.75 0 016 10.5z" 
+            />
+          </svg>
 
         </div>
       </form>
