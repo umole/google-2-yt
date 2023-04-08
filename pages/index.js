@@ -4,10 +4,12 @@ import { ViewGridIcon } from '@heroicons/react/solid'
 import Image from 'next/image'
 //import { MagnifyingGlassIcon } from '@heroicons/react/24/outline'
 //import { MagnifyingGlassIcon } from '@heroicons/react/outline'
+import Footer from '@/components/Footer' 
+
 
 export default function Home() {
   return (
-    <>
+    <div className='flex flex-col items-center h-screen'>
       <Head>
         <title>Google</title> 
         <link rel='icon' href='/favicon.ico' />
@@ -35,7 +37,7 @@ export default function Home() {
       </header>
 
       {/* Body */}
-      <form className='flex flex-col items-center mt-18'>
+      <form className='flex flex-col items-center mt-13'> 
         <Image 
           src={'https://cdn.pixabay.com/photo/2015/10/31/12/54/google-1015751__340.png'} 
           height={100}
@@ -69,11 +71,17 @@ export default function Home() {
               d="M6 10.5a.75.75 0 01.75.75v1.5a5.25 5.25 0 1010.5 0v-1.5a.75.75 0 011.5 0v1.5a6.751 6.751 0 01-6 6.709v2.291h3a.75.75 0 010 1.5h-7.5a.75.75 0 010-1.5h3v-2.291a6.751 6.751 0 01-6-6.709v-1.5A.75.75 0 016 10.5z" 
             />
           </svg>
-
         </div>
+
+        <div className='flex flex-col space-y-2 justify-center mt-8  sm:flex-row sm:space-x-4'>
+          <button className='btn h-10'>Google Search</button>
+          <button className='btn h-10'>I'm Feeling Lucky</button>
+        </div>
+
       </form>
 
       {/* Footer */}
-    </>
+      <Footer />
+    </div>
   )
 }
