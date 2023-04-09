@@ -73,7 +73,7 @@ export default function Home() {
           </svg>
         </div>
 
-        <div className='flex flex-col space-y-2 justify-center mt-8  sm:flex-row sm:space-x-4'>
+        <div className='flex flex-col justify-center mt-2  sm:flex-row sm:space-x-4'>
           <button className='btn h-10'>Google Search</button>
           <button className='btn h-10'>I'm Feeling Lucky</button>
         </div>
