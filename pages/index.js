@@ -9,12 +9,13 @@ import Footer from '@/components/Footer'
 
 export default function Home() {
   return (
-    <div className='flex flex-col items-center h-screen'>
+    <div>
       <Head>
         <title>Google</title> 
         <link rel='icon' href='/favicon.ico' />
       </Head>
 
+      <div className='flex flex-col items-center h-screen'>
       {/* Header */}
       <header className='flex w-full p-5 justify-between text-sm text-gray-700'>
         {/* Left */}
@@ -82,6 +83,7 @@ export default function Home() {
 
       {/* Footer */}
       <Footer />
+      </div>
     </div>
   )
 }
