@@ -1,6 +1,6 @@
 const Footer = () => {
   return (
-    <div>
+    <div className="flex flex-col text-center">
         <p>Nigeria</p>
     </div>
   )

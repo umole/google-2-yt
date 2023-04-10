@@ -9,13 +9,12 @@ import Footer from '@/components/Footer'
 
 export default function Home() {
   return (
-    <div>
+    <div className='flex flex-col justify-between h-screen'>
       <Head>
         <title>Google</title> 
         <link rel='icon' href='/favicon.ico' />
       </Head>
-
-      <div className='flex flex-col items-center h-screen'>
+      
       {/* Header */}
       <header className='flex w-full p-5 justify-between text-sm text-gray-700'>
         {/* Left */}
@@ -38,7 +37,7 @@ export default function Home() {
       </header>
 
       {/* Body */}
-      <form className='flex flex-col items-center mt-13'> 
+      <form className='flex flex-col items-center -mt-60'> 
         <Image 
           src={'https://cdn.pixabay.com/photo/2015/10/31/12/54/google-1015751__340.png'} 
           height={100}
@@ -63,7 +62,7 @@ export default function Home() {
             xmlns="http://www.w3.org/2000/svg" 
             viewBox="0 0 24 24" 
             fill="currentColor" 
-            class="w-6 h-6"
+            class="w-6 h-6 cursor-pointer"
           >
             <path 
               d="M8.25 4.5a3.75 3.75 0 117.5 0v8.25a3.75 3.75 0 11-7.5 0V4.5z"    
@@ -83,7 +82,6 @@ export default function Home() {
 
       {/* Footer */}
       <Footer />
-      </div>
     </div>
   )
 }
