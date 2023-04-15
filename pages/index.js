@@ -37,7 +37,7 @@ export default function Home() {
       </header>
 
       {/* Body */}
-      <form className='flex flex-col items-center -mt-60'> 
+      <form className='flex flex-col items-center mt-1'> 
         <Image 
           src={'https://cdn.pixabay.com/photo/2015/10/31/12/54/google-1015751__340.png'} 
           height={100}
